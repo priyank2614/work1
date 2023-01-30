@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background: #1e1e1e; */
+}
+html,
+body {
+  font-family: "Inter";
+  color: #d5d3d3;
+}
+ul,
+li,
+a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  text-decoration: none;
+  color: #ffff;
+}
+ul {
+  list-style: none;
+}
+#hero {
+  width: 100%;
+  height: 1024px;
+  /* background-image: url(images/car-3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+  background: linear-gradient(180deg, #000000 0%, #010516 100%);
+  background: linear-gradient(180deg, #000000 0%, #010516 100%);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 15%;
+}
+.hero-text {
+  text-align: center;
+  margin: 50px auto;
+  width: 40%;
+}
+h1 {
+  font-family: "Abel", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5rem;
+  line-height: 1.2;
+
+  background: linear-gradient(
+    91.06deg,
+    #00f0ff 2.26%,
+    #b25cfa 21.6%,
+    #ff1cf7 63.35%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+h2 {
+  font-family: "Abel", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 2.5rem;
+}
+.logo-img {
+  width: 102px;
+  height: 100px;
+  left: 133px;
+  top: 45px;
+}
+
+li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+li a:hover {
+  color: #191970;
+}
+.intro-text {
+  padding: 20px 0;
+}
+.cta {
+  padding: 22px 32px;
+  border-radius: 7px;
+  cursor: pointer;
+  color: #000000;
+}
+.cta1 {
+  background: linear-gradient(180deg, #497cff 0%, #001664 100%);
+  color: #fff;
+}
+.cta:hover {
+  border: 2px solid #fff;
+}
+.fa-brands {
+  padding-left: 5px;
+  cursor: pointer;
+}
+.fa-brands:hover {
+  color: #191970;
+}
+/* Media for smaller device */
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 15px 10%;
+  }
+  .hero-text {
+    width: 100%;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  li {
+    display: block;
+  }
+}
