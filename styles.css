@@ -118,25 +118,25 @@ li a:hover {
 }
 
 /* About Section */
-.container {
+#about {
   width: 100%;
   height: auto;
-  padding: 60px 15%;
-  font-family: "Abel", sans-serif;
-
   background: linear-gradient(180deg, #000000 0%, #010516 100%);
 }
-.row {
-  display: flex;
-  justify-content: space-evenly;
+.container {
+  padding: 60px 15%;
+  font-family: "Abel", sans-serif;
+  text-align: center;
 }
-.about-img {
-  width: 100%;
-  height: auto;
-}
+
 .about-text {
-  width: 50%;
-  margin: 20px 50px;
+  /* text-align: justify; */
+  font-family: "Abel", sans-serif;
+  line-height: 2;
+  letter-spacing: normal;
+  font-size: 18px;
+  margin: 20px 130px;
+  /* margin: 20px 130px; */
 }
 .about-btn {
   margin: 0 50px;
@@ -189,5 +189,13 @@ hr {
   }
   li {
     display: block;
+  }
+  #about {
+    width: 100%;
+    height: auto;
+  }
+  .about-text {
+    margin: auto;
+    text-align: justify;
   }
 }
