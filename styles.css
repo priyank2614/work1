@@ -3,8 +3,22 @@
 * {
   margin: 0;
   padding: 0;
+  outline: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
   box-sizing: border-box;
-  /* background: #1e1e1e; */
+}
+:root {
+  --color-bg: linear-gradient(180deg, #000000 0%, #010516 100%);
+  --color-bg1: linear-gradient(
+    91.06deg,
+    #00f0ff 2.26%,
+    #b25cfa 21.6%,
+    #ff1cf7 63.35%
+  );
+  --color-bg2: linear-gradient(180deg, #497cff 0%, #001664 100%);
+  --color-white: #fff;
 }
 html,
 body {
@@ -22,17 +36,12 @@ a {
   text-decoration: none;
   color: #ffff;
 }
-ul {
+/* ul {
   list-style: none;
-}
+} */
 #hero {
   width: 100%;
   height: 1024px;
-  /* background-image: url(images/car-3.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; */
-  background: linear-gradient(180deg, #000000 0%, #010516 100%);
   background: linear-gradient(180deg, #000000 0%, #010516 100%);
 }
 header {
@@ -106,6 +115,66 @@ li a:hover {
 }
 .fa-brands:hover {
   color: #191970;
+}
+
+/* About Section */
+.container {
+  width: 100%;
+  height: auto;
+  padding: 60px 15%;
+  font-family: "Abel", sans-serif;
+
+  background: linear-gradient(180deg, #000000 0%, #010516 100%);
+}
+.row {
+  display: flex;
+  justify-content: space-evenly;
+}
+.about-img {
+  width: 100%;
+  height: auto;
+}
+.about-text {
+  width: 50%;
+  margin: 20px 50px;
+}
+.about-btn {
+  margin: 0 50px;
+}
+/* About Section End*/
+/* Footer Section */
+#footer-top {
+  width: 100%;
+  padding: 60px 15%;
+  font-family: "Abel", sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  background: linear-gradient(180deg, #000000 0%, #010516 100%);
+}
+#footer-top h3 {
+  margin-bottom: 15px;
+  font-family: "Abel", sans-serif;
+}
+#footer-top .nav-link {
+  font-size: 15px;
+}
+#footer {
+  width: 100%;
+  background: linear-gradient(180deg, #000000 0%, #010516 100%);
+
+  text-align: center;
+}
+footer {
+  padding: 60px 15%;
+}
+#footer p {
+  margin-bottom: 20px;
+}
+hr {
+  margin: 10px 0;
+}
+.copyright {
+  margin-top: 20px;
 }
 /* Media for smaller device */
 @media only screen and (max-width: 768px) {
