@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300; 400; 500; 600; 700; 800; 900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #6e67f5;
+  --color-success: #00bf8e;
+  --color-warning: #f7c94b;
+  --color-danger: #f75842;
+  --color-danger-variant: Orgba(247, 88, 66, 0.4);
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.7);
+  --color-black: #000;
+  --color-bg: #16181f;
+  --color-bg1: #383a57;
+  --color-bg2: #191b3b;
+
+  --container-width-lg: 80%;
+  --container-width-md: 90%;
+  --container-width-sm: 94%;
+
+  --transition: all 400ms ease;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+  color: var(--color-white);
+  background: var(--color-bg);
+}
+/* About Section start */
+#about {
+  background: var(--color-bg1);
+}
+#about .col {
+  float: left;
+  width: 50%;
+}
+#about .row {
+  content: "";
+  display: table;
+  clear: both;
+  padding: 30px 130px;
+}
+.about-img {
+  width: 90%;
+  height: auto;
+}
+#about .col h2 {
+  margin-bottom: 15px;
+}
+/* About Section End */
+
+/* New-Team Section start */
+#team {
+  margin-top: 50px;
+}
+.card img {
+  width: 100px;
+  height: 100px;
+}
+.col {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 10px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.container {
+  padding: 20px 16px;
+}
+.title {
+  color: var(--color-light);
+}
+.row h1 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* New-Team Section end  */
+@media screen and (max-width: 1120px) {
+  #about .col {
+    width: 100%;
+    padding: 0 30px;
+  }
+  #about .row {
+    padding: 30px 20px;
+  }
+}
+@media screen and (max-width: 650px) {
+  #about .col {
+    width: 100%;
+    padding: 0 30px;
+  }
+  #about .row {
+    padding: 30px 20px;
+  }
+  .col {
+    width: 100%;
+    display: block;
+  }
+}

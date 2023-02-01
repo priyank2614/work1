@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300; 400; 500; 600; 700; 800; 900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -9,32 +9,43 @@
   list-style: none;
   box-sizing: border-box;
 }
+
 :root {
-  --color-bg: linear-gradient(180deg, #000000 0%, #010516 100%);
-  --color-bg1: linear-gradient(
-    91.06deg,
-    #00f0ff 2.26%,
-    #b25cfa 21.6%,
-    #ff1cf7 63.35%
-  );
-  --color-bg2: linear-gradient(180deg, #497cff 0%, #001664 100%);
+  --color-primary: #6e67f5;
+  --color-success: #00bf8e;
+  --color-warning: #f7c94b;
+  --color-danger: #f75842;
+  --color-danger-variant: Orgba(247, 88, 66, 0.4);
   --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.7);
+  --color-black: #000;
+  --color-bg: #16181f;
+  --color-bg1: #383a57;
+  --color-bg2: #191b3b;
+
+  --container-width-lg: 80%;
+  --container-width-md: 90%;
+  --container-width-sm: 94%;
+
+  --transition: all 400ms ease;
 }
-html,
+
 body {
-  font-family: "Inter";
-  color: #d5d3d3;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+  color: var(--color-white);
+  background: var(--color-bg);
 }
 ul,
 li,
 a {
-  font-family: "Inter";
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 29px;
   text-decoration: none;
-  color: #ffff;
+  color: var(--color-white);
 }
 /* ul {
   list-style: none;
@@ -56,7 +67,7 @@ header {
   width: 40%;
 }
 h1 {
-  font-family: "Abel", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 5rem;
@@ -73,7 +84,7 @@ h1 {
   background-clip: text;
 }
 h2 {
-  font-family: "Abel", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.2;
@@ -91,7 +102,7 @@ li {
   padding: 0px 20px;
 }
 li a:hover {
-  color: #191970;
+  color: var(--color-primary);
 }
 .intro-text {
   padding: 20px 0;
@@ -100,11 +111,11 @@ li a:hover {
   padding: 22px 32px;
   border-radius: 7px;
   cursor: pointer;
-  color: #000000;
+  color: var(--color-black);
 }
 .cta1 {
-  background: linear-gradient(180deg, #497cff 0%, #001664 100%);
-  color: #fff;
+  background: var(--color-bg2);
+  color: var(--color-white);
 }
 .cta:hover {
   border: 2px solid #fff;
@@ -114,53 +125,14 @@ li a:hover {
   cursor: pointer;
 }
 .fa-brands:hover {
-  color: #191970;
+  color: var(--color-primary);
 }
 
-/* About Section */
-#about {
-  width: 100%;
-  height: auto;
-  background: linear-gradient(180deg, #000000 0%, #010516 100%);
-}
-.container {
-  padding: 60px 15%;
-  font-family: "Abel", sans-serif;
-  text-align: center;
-}
-
-.about-text {
-  /* text-align: justify; */
-  font-family: "Abel", sans-serif;
-  line-height: 2;
-  letter-spacing: normal;
-  font-size: 18px;
-  margin: 20px 130px;
-  /* margin: 20px 130px; */
-}
-.about-btn {
-  margin: 0 50px;
-}
-/* About Section End*/
 /* Footer Section */
-#footer-top {
-  width: 100%;
-  padding: 60px 15%;
-  font-family: "Abel", sans-serif;
-  display: flex;
-  justify-content: space-evenly;
-  background: linear-gradient(180deg, #000000 0%, #010516 100%);
-}
-#footer-top h3 {
-  margin-bottom: 15px;
-  font-family: "Abel", sans-serif;
-}
-#footer-top .nav-link {
-  font-size: 15px;
-}
+
 #footer {
   width: 100%;
-  background: linear-gradient(180deg, #000000 0%, #010516 100%);
+  background: var(--color-bg2);
 
   text-align: center;
 }
@@ -175,6 +147,18 @@ hr {
 }
 .copyright {
   margin-top: 20px;
+}
+/* Footer-section-end  */
+
+/* Media Queries  */
+@media only screen and (max-width: 992px) {
+  .team-container {
+    flex-direction: column;
+  }
+  .profiles {
+    margin: 30px 80px;
+    width: auto;
+  }
 }
 /* Media for smaller device */
 @media only screen and (max-width: 768px) {
@@ -198,4 +182,14 @@ hr {
     margin: auto;
     text-align: justify;
   }
+  .team-container {
+    flex-direction: column;
+  }
+
+  .profiles {
+    margin: 30px 80px;
+  }
+  /* .footer-top {
+    flex-direction: column;
+  } */
 }
