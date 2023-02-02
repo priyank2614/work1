@@ -36,28 +36,6 @@ body {
   color: var(--color-white);
   background: var(--color-bg);
 }
-/* About Section start */
-#about {
-  background: var(--color-bg1);
-}
-#about .col {
-  float: left;
-  width: 50%;
-}
-#about .row {
-  content: "";
-  display: table;
-  clear: both;
-  padding: 30px 130px;
-}
-.about-img {
-  width: 90%;
-  height: auto;
-}
-#about .col h2 {
-  margin-bottom: 15px;
-}
-/* About Section End */
 
 /* New-Team Section start */
 #team {
@@ -95,9 +73,9 @@ body {
   display: table;
 }
 /* New-Team Section end  */
-@media screen and (max-width: 1120px) {
-  #about .col {
-    width: 100%;
+@media screen and (max-width: 1024px) {
+  .col {
+    width: 50%;
     padding: 0 30px;
   }
   #about .row {
